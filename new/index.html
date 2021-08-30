@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Post view</title>
+		<link rel='stylesheet' href='../css/main.css'>
+		<script defer src='../lib/new.js'></script>
+	</head>
+	<body>
+		<section class='hero is-medium is-link'>
+			<div class='hero-body'>
+				<div class='container'>
+					<div class='columns'>
+						<div class='column is-8-desktop is-offset-2-desktop'>
+							<h1 class='title is-2 is-spaced'>
+								New post
+							</h1>
+							<h2 class='subtitle is-4'>
+								<a class='button is-primary' href='../'>Back home</a>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class='section'>
+			<div class='container'>
+				<div id='link-container'></div>
+				<h2 class='title'>Fill in your post data.</h2>
+				<h3 class='subtitle'>All fields except link are optional</h3>
+				<form id='main-form'>
+					<div class='field'>
+						<label class='label'>Post URL</label>
+						<div class='control'>
+							<input id='form-link' class='input' type='url' placeholder='ex. https://dev.to/siddharthshyniben/how-to-cut-a-cake-with-various-tech-262m'>
+						</div>
+					</div>
+
+					<div class='field'>
+						<label class='label'>Post title</label>
+						<div class='control'>
+							<input id='form-title' class='input' type='text' placeholder='ex. How to cut a cake with various tech'>
+						</div>
+						<p class='help'>If you fill in the post URL, this will be autofilled (if possible)</p>
+					</div>
+
+					<div class='field'>
+						<label class='label'>Description</label>
+						<div class='control'>
+							<input id='form-description' class='input' type='text' placeholder='ex. Jokes'>
+						</div>
+						<p class='help'>If you fill in the post URL, this will be autofilled (if possible)</p>
+					</div>
+
+					<h4 class='subtitle'>Socials</h4>
+
+					<div class='field'>
+						<label class='label'>Twitter</label>
+						<div class='control'>
+							<input id='form-twitter' class='input' type='text' placeholder='ex. @SiddharthShyn'>
+						</div>
+						<p class='help'>If you fill in the post URL, this will be autofilled (if possible)</p>
+					</div>
+
+					<div class='field is-grouped'>
+						<div class='control'>
+							<button class='button is-link'>Submit</button>
+						</div>
+						<div class='control'>
+							<button type='reset' class='button is-link is-light'>Clear</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer class='footer has-text-centered'>
+			<div class='container'>
+				<div class='columns'>
+					<div class='column is-8-desktop is-offset-2-desktop'>
+						<p>
+						<strong class='has-text-weight-semibold'>
+							<a href='https://github.com/SiddharthShyniben/post-view'>Post view</a>
+						</strong>
+						</p>
+						<p>
+						<small>
+							Source code licensed <a href='http://opensource.org/licenses/mit-license.php'>MIT</a>
+						</small>
+						</p>
+						<p style='margin-top: 1rem;'>
+						<a href='http://bulma.io'>
+							<img src='made-with-bulma.png' alt='Made with Bulma' width='128' height='24'>
+						</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
